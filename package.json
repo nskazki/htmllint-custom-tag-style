@@ -1,0 +1,17 @@
+{
+  "name": "htmllint-custom-tag-style",
+  "version": "1.0.0",
+  "description": "htmllint plugin to check custom tag naming.",
+  "main": "index.js",
+  "repository": "https://github.com/nskazki/htmllint-custom-tag-style",
+  "author": "nskazki <nskazki@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "htmllint": "^0.6.0"
+  },
+  "dependencies": {
+    "html-tags": "^1.1.1",
+    "mathml-tag-names": "^2.0.0",
+    "svg-tags": "^1.0.0"
+  }
+}
