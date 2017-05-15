@@ -1,6 +1,6 @@
 # htmllint-custom-tag-style
 
-[htmllint] plugin to check custom tag naming.
+[htmllint](https://github.com/htmllint/htmllint) plugin to check custom tag naming.
 
 ```bash
 yarn add -D htmllint-custom-tag-style
