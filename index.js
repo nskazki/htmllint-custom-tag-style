@@ -8,10 +8,11 @@
 const proc = require('htmllint/lib/process_option')
 const Issue = require('htmllint/lib/issue')
 const messages = require('htmllint/lib/messages')
+const toLowerCase = v => v.toLowerCase()
 
-const svgTags = require('svg-tags')
-const htmlTags = require('html-tags')
-const mathMLTags = require('mathml-tag-names')
+const svgTags = require('svg-tags').map(toLowerCase)
+const htmlTags = require('html-tags').map(toLowerCase)
+const mathMLTags = require('mathml-tag-names').map(toLowerCase)
 
 // main
 
