@@ -7,7 +7,6 @@
 
 const proc = require('htmllint/lib/process_option')
 const Issue = require('htmllint/lib/issue')
-const messages = require('htmllint/lib/messages')
 const toLowerCase = v => v.toLowerCase()
 
 const svgTags = require('svg-tags').map(toLowerCase)
@@ -61,26 +60,6 @@ customTagStyle.lint = function (element, opts) {
     ? new Issue('E011', element.openLineCol, { format: format.desc, tag: tagName })
     : []
 }
-
-// improve output
-
-const baseRenderMsg = messages.renderMsg
-const E011RenderMsg = (_code, data) => {
-  if (data.id)
-    return `id=${data.id} must match the format=${data.format}`
-  else if (data.tag)
-    return `tag=${data.tag} must match the format=${data.format}`
-  else if (data.class)
-    return `class=${data.class} must match the format=${data.format}`
-  else
-    return `value must match the format=${data.format}`
-}
-
-messages.renderMsg = (code, data) =>
-  code === 'E011'
-    ? E011RenderMsg(code, data)
-    : baseRenderMsg(code, data)
-
 
 // export
 
