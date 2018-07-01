@@ -57,7 +57,7 @@ customTagStyle.lint = function (element, opts) {
     return []
 
   return !format.test(tagNameLowerCase)
-    ? new Issue('E011', element.openLineCol, { format: format.desc, tag: tagName })
+    ? new Issue('E011', element.openLineCol, { attribute: 'tag', format: format.desc, value: tagName })
     : []
 }
 
