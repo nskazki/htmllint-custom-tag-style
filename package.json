@@ -1,6 +1,6 @@
 {
   "name": "htmllint-custom-tag-style",
-  "version": "3.0.7",
+  "version": "3.0.8",
   "description": "htmllint plugin to check custom tag naming.",
   "main": "index.js",
   "repository": "https://github.com/nskazki/htmllint-custom-tag-style",
